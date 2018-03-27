@@ -702,7 +702,8 @@ class Server
 
         $methods = get_class_methods($this->controller);
         foreach ($methods as $method) {
-            if (in_array($method, $this->collectRoutesExclude)) continue;
+
+            if (in_array($method, $this->collectRoutesExclude) || strpos($method, '__')===0) continue;
 
             $info = explode('/', preg_replace('/([a-z]*)(([A-Z]+)([a-zA-Z0-9_]*))/', '$1/$2', $method));
             $uri  = $this->camelCase2Dashes($info[1]);
