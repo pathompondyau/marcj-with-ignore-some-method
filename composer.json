@@ -1,5 +1,5 @@
 {
-    "name": "marcj/php-rest-service",
+    "name": "pathompondyau/marcj-with-ignore-some-method",
     "description": "PHPRestService is a simple and fast PHP class for server side RESTful APIs.",
     "keywords": ["REST", "RESTful", "php", "API"],
     "license": "MIT",
