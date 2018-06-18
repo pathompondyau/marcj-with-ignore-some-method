@@ -231,7 +231,7 @@ class Client
             header('Content-Type: application/json; charset=utf-8');
 
         $result = $this->jsonFormat($pMessage);
-        $this->setContentLength($result);
+        //$this->setContentLength($result);
 
         return $result;
     }
